@@ -1,0 +1,10 @@
+C:\Users\manue\Desktop\proyecto\FerreteriaPuntoDeVenta\obj\Debug\FerreteríaPuntoVenta.csproj.AssemblyReference.cache
+C:\Users\manue\Desktop\proyecto\FerreteriaPuntoDeVenta\obj\Debug\FerreteríaPuntoVenta.Properties.Resources.resources
+C:\Users\manue\Desktop\proyecto\FerreteriaPuntoDeVenta\obj\Debug\FerreteríaPuntoVenta.Form1.resources
+C:\Users\manue\Desktop\proyecto\FerreteriaPuntoDeVenta\obj\Debug\FerreteríaPuntoVenta.csproj.GenerateResource.cache
+C:\Users\manue\Desktop\proyecto\FerreteriaPuntoDeVenta\obj\Debug\FerreteríaPuntoVenta.csproj.CoreCompileInputs.cache
+C:\Users\manue\Desktop\proyecto\FerreteriaPuntoDeVenta\bin\Debug\FerreteríaPuntoVenta.exe.config
+C:\Users\manue\Desktop\proyecto\FerreteriaPuntoDeVenta\bin\Debug\FerreteríaPuntoVenta.exe
+C:\Users\manue\Desktop\proyecto\FerreteriaPuntoDeVenta\bin\Debug\FerreteríaPuntoVenta.pdb
+C:\Users\manue\Desktop\proyecto\FerreteriaPuntoDeVenta\obj\Debug\FerreteríaPuntoVenta.exe
+C:\Users\manue\Desktop\proyecto\FerreteriaPuntoDeVenta\obj\Debug\FerreteríaPuntoVenta.pdb
