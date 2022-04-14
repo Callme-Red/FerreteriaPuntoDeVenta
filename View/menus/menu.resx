@@ -117,4 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button_minim.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABI2lDQ1BJQ0MgcHJvZmlsZQAAKM+dkL1K
+        xFAQhb+sv4hWyhaikMLGYsHGVDb+YLBYWLMRXK2ySRYXkxiSLItv4Jvow2whCD6BT6Bg7bnRwiaFDgzz
+        McycM/dCy07CtJzfgzSrCtc7HFwOruylNxbYxmKXdhCWebd/6tMYn6+aVLx0jBZ/i8UoLkPVmTIL86IC
+        60DsTKvcsJKNW987Fj+I7SjNIvGTeCdKI8Nm10uTSfijaa5ZjbOLvukrt3A5o0sPmyETxiRUdFQzdU5w
+        2Fd1KQi4pyRUTYjVm2qm4kZUSsnlSOSLdE2D32bt15PLUBpjaRmHO1JpGj/M/36vfZzXm1Z7lgdFULfm
+        lK3RCN4fYW0A68+wct3gtfz7bQ0zTj3zrzfCFwRrUHNPZ3SWAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA
+        B3RJTUUH5AUdAxAD+h8OtAAAAB1JREFUOE9jGAVDDvz//z8EiIkBgVAto2CoAAYGAPUKKnz2+OtwAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="button_cerrar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABhmlDQ1BJQ0MgcHJvZmlsZQAAKM+VkTtI
+        w1AUhv+mFkUqDnYQH5Ch6mJBVMRRolgEC6Wt0KqDyU1f0KQhSXFxFFwLDj4Wqw4uzro6uAqC4APEydFJ
+        0UVKPDcptAgVPHC5H/+9/8+55wJCrcQ0q2MC0HTbTEQlMZ1ZFTtfEcAwfBjDoMwsI5ZcTKFtfd3TTaq7
+        CM/C/6pHzVoM8InEc8wwbeIN4plN2+C8TxxiBVklPiceN6lB4keuKx6/cc67LPDMkJlKzBOHiMV8Cyst
+        zAqmRjxNHFY1nfKFtMcq5y3OWqnCGn3yFwaz+kqS67SGEMUSYohDhIIKiijBRoR2nRQLCTqX2vgHXH+c
+        XAq5imDkWEAZGmTXD/4Hv2dr5aYmvaSgBAReHOdjBOjcBepVx/k+dpz6CeB/Bq70pr9cA2Y/Sa82tfAR
+        0LsNXFw3NWUPuNwB+p8M2ZRdyU9LyOWA9zP6pgzQdwt0r3lza5zj9AFI0ayWb4CDQ2A0T9nrbd7d1Tq3
+        P++484P0A4apcq+mOD8WAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AUdAhIOt1p6vAAAAH1J
+        REFUOE+lktEJwCAMRN3ESfrlQo7bGSz60QWsB41N0wSsCg+Su5wi6vYQplHFUXpxpuRyKZ6bEviYo/4x
+        cva11qOxkcaBDp8foA7IDSy9F4QclD3n1RAsEK0g+AjEHcSKmg9UsQXmTmbBf3e2Bi29F0vvvPTDZlDF
+        MYK7ALh9pbRFHM4SAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

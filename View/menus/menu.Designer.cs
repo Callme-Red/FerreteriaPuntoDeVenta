@@ -29,6 +29,7 @@ namespace FerreteríaPuntoVenta
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panel_sub_menu_management_purchase = new System.Windows.Forms.Panel();
             this.button_purchase = new System.Windows.Forms.Button();
@@ -47,9 +48,10 @@ namespace FerreteríaPuntoVenta
             this.botton_inicio = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel_form = new System.Windows.Forms.Panel();
             this.button_minim = new System.Windows.Forms.PictureBox();
             this.button_cerrar = new System.Windows.Forms.PictureBox();
+            this.panel_form = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel_sub_menu_management_purchase.SuspendLayout();
             this.panel_sub_menu_supplier.SuspendLayout();
@@ -57,6 +59,7 @@ namespace FerreteríaPuntoVenta
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.button_minim)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_cerrar)).BeginInit();
+            this.panel_form.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -323,43 +326,56 @@ namespace FerreteríaPuntoVenta
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(250, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(700, 100);
+            this.panel1.Size = new System.Drawing.Size(700, 75);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
-            // panel_form
-            // 
-            this.panel_form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(45)))));
-            this.panel_form.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_form.Location = new System.Drawing.Point(250, 100);
-            this.panel_form.Name = "panel_form";
-            this.panel_form.Size = new System.Drawing.Size(700, 620);
-            this.panel_form.TabIndex = 2;
-            this.panel_form.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_form_Paint);
-            this.panel_form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_form_MouseDown);
-            // 
             // button_minim
             // 
-            this.button_minim.Image = global::FerreteríaPuntoVenta.Properties.Resources.minimizar_signo;
-            this.button_minim.Location = new System.Drawing.Point(609, 12);
+            this.button_minim.Image = ((System.Drawing.Image)(resources.GetObject("button_minim.Image")));
+            this.button_minim.Location = new System.Drawing.Point(640, 0);
             this.button_minim.Name = "button_minim";
-            this.button_minim.Size = new System.Drawing.Size(32, 24);
-            this.button_minim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.button_minim.Size = new System.Drawing.Size(30, 25);
+            this.button_minim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.button_minim.TabIndex = 4;
             this.button_minim.TabStop = false;
             this.button_minim.Click += new System.EventHandler(this.button_minim_Click);
             // 
             // button_cerrar
             // 
-            this.button_cerrar.Image = global::FerreteríaPuntoVenta.Properties.Resources.simbolo_x;
-            this.button_cerrar.Location = new System.Drawing.Point(656, 12);
+            this.button_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("button_cerrar.Image")));
+            this.button_cerrar.Location = new System.Drawing.Point(670, 0);
             this.button_cerrar.Name = "button_cerrar";
-            this.button_cerrar.Size = new System.Drawing.Size(32, 24);
-            this.button_cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.button_cerrar.Size = new System.Drawing.Size(30, 25);
+            this.button_cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.button_cerrar.TabIndex = 3;
             this.button_cerrar.TabStop = false;
             this.button_cerrar.Click += new System.EventHandler(this.button_cerrar_Click);
+            this.button_cerrar.MouseEnter += new System.EventHandler(this.button_cerrar_MouseEnter);
+            this.button_cerrar.MouseLeave += new System.EventHandler(this.button_cerrar_MouseLeave);
+            // 
+            // panel_form
+            // 
+            this.panel_form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(45)))));
+            this.panel_form.Controls.Add(this.button1);
+            this.panel_form.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_form.Location = new System.Drawing.Point(250, 75);
+            this.panel_form.Name = "panel_form";
+            this.panel_form.Size = new System.Drawing.Size(700, 645);
+            this.panel_form.TabIndex = 2;
+            this.panel_form.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_form_Paint);
+            this.panel_form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_form_MouseDown);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(204, 47);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Listar paises";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
@@ -380,6 +396,7 @@ namespace FerreteríaPuntoVenta
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.button_minim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_cerrar)).EndInit();
+            this.panel_form.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -407,6 +424,7 @@ namespace FerreteríaPuntoVenta
         private System.Windows.Forms.Panel panel_form;
         private System.Windows.Forms.PictureBox button_cerrar;
         private System.Windows.Forms.PictureBox button_minim;
+        private System.Windows.Forms.Button button1;
     }
 }
 
