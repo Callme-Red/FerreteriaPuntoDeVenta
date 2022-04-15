@@ -56,6 +56,8 @@
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\ContactoProveedor.cs" />
     <Compile Include="Model\Departamento.cs" />
+    <Compile Include="Model\DetalleOrdenCompra.cs" />
+    <Compile Include="Model\DetallePedidoCompra.cs" />
     <Compile Include="Model\Empleado.cs" />
     <Compile Include="Model\Estado.cs" />
     <Compile Include="Model\HistorialCargo.cs" />
@@ -63,6 +65,8 @@
     <Compile Include="Model\Models.cs" />
     <Compile Include="Model\MPais.cs" />
     <Compile Include="Model\Municipio.cs" />
+    <Compile Include="Model\OrdenCompra.cs" />
+    <Compile Include="Model\PedidoCompra.cs" />
     <Compile Include="Model\Persona.cs" />
     <Compile Include="Model\PersonaJuridica.cs" />
     <Compile Include="Model\PersonaNatural.cs" />
