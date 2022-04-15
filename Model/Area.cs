@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace FerreteríaPuntoVenta.Model
 {
-    public class MPais
+    public class Area
     {
-        public int pais_codigo { get; set; }
-        public string pais_nombre { get; set; }
-
+        public int area_codigo { get; set; }
+        public String area_nombre { get; set; }
     }
 }
