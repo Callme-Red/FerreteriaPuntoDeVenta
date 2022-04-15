@@ -61,6 +61,7 @@
     <Compile Include="Model\Empleado.cs" />
     <Compile Include="Model\Estado.cs" />
     <Compile Include="Model\HistorialCargo.cs" />
+    <Compile Include="Model\Inventario.cs" />
     <Compile Include="Model\Marca.cs" />
     <Compile Include="Model\Models.cs" />
     <Compile Include="Model\MPais.cs" />
