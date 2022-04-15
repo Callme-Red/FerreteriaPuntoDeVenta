@@ -1,0 +1,2 @@
+# Agregar el paquete de Dapper para trabajar con sql server
+Dapper.2.0.123

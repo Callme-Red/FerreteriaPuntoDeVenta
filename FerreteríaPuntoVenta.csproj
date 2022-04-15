@@ -52,6 +52,7 @@
     <Compile Include="ConnectionDB\MasterConnection.cs" />
     <Compile Include="Controller\MasterController.cs" />
     <Compile Include="Model\Models.cs" />
+    <Compile Include="Model\MPais.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\Inventory\Form1.cs">

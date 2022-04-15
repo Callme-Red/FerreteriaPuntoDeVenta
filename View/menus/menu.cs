@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using FerreteríaPuntoVenta.Controller;
 
 namespace FerreteríaPuntoVenta
 {
@@ -181,6 +182,22 @@ namespace FerreteríaPuntoVenta
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void button_cerrar_MouseEnter(object sender, EventArgs e)
+        {
+            button_cerrar.BackColor = Color.DarkGray;
+        }
+
+        private void button_cerrar_MouseLeave(object sender, EventArgs e)
+        {
+            button_cerrar.BackColor = Color.Transparent;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MasterController mc = new MasterController();
+            mc.listPais();
         }
     }
 }
