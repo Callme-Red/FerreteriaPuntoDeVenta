@@ -18,12 +18,13 @@ namespace FerreteríaPuntoVenta.Controller
             MasterConnection.OpenConnection();
             using (var connection = MasterConnection.s_connect)
             {
-                var sql = "SP_PAIS_LISTAR";
-                var lstpaises = connection.Query<MPais>(sql, commandType:CommandType.StoredProcedure);
+                var sql = "sp_proveedor_leer_general";
+
+                var lstpaises = connection.Query<vista_proveedor>(sql, commandType:CommandType.StoredProcedure);
                 
                 foreach(var oElement in lstpaises)
                 {
-                    Console.WriteLine(oElement.nombre_pais);
+                    Console.WriteLine(oElement.proveedor_ruc);
                 }
                 MasterConnection.ClosedConnection();
             }
