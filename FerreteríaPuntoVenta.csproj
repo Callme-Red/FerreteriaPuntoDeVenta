@@ -106,6 +106,12 @@
     <Compile Include="View\menus\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\menus\menus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\menus\menus.Designer.cs">
+      <DependentUpon>menus.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\order_purchase\read_order_purchase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\menus\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\menus\menus.resx">
+      <DependentUpon>menus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\order_purchase\read_order_purchase.resx">
       <DependentUpon>read_order_purchase.cs</DependentUpon>

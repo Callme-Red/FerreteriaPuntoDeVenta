@@ -27,6 +27,8 @@ namespace FerreteríaPuntoVenta.View.login
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
+        
+
         public void logeo()
         {
             
@@ -42,7 +44,9 @@ namespace FerreteríaPuntoVenta.View.login
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())
                         {
+                            
                             MessageBox.Show("Login existo bienvenido");
+
                         } else
                         {
                             MessageBox.Show("Login incorrecto");
@@ -131,9 +135,9 @@ namespace FerreteríaPuntoVenta.View.login
             
                 
                 logeo();
+            Application.Run(new menus);
 
-                
-            }
+        }
         }
     }
 

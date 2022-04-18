@@ -17,7 +17,7 @@ namespace FerreteríaPuntoVenta
         public Form1()
         {
             InitializeComponent();
-            customize_desing();
+            
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
