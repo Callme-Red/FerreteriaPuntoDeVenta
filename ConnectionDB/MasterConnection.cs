@@ -10,7 +10,7 @@ namespace FerreteríaPuntoVenta.ConnectionDB
 {
     class MasterConnection
     {
-        private static string s_connectionString = @"Data source=DESKTOP-JQOH4UU; Initial Catalog=prueba; Integrated Security=True ";
+        public static string s_connectionString = @"Data source=DESKTOP-JQOH4UU; Initial Catalog=prueba; Integrated Security=True ";
         public static SqlConnection s_connect = new SqlConnection(s_connectionString);
 
         //Metodos internos para abrir y cerrar la conexion con la base de datos

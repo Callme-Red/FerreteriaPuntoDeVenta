@@ -32,6 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
@@ -50,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionDB\MasterConnection.cs" />
+    <Compile Include="Controller\login.cs" />
     <Compile Include="Controller\MasterController.cs" />
     <Compile Include="Model\Area.cs" />
     <Compile Include="Model\Categoria.cs" />
@@ -89,11 +94,23 @@
     <Compile Include="View\Inventory\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\login\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\login\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\menus\menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\menus\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\order_purchase\read_order_purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\order_purchase\read_order_purchase.Designer.cs">
+      <DependentUpon>read_order_purchase.cs</DependentUpon>
     </Compile>
     <Compile Include="View\PrincipalView.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -106,8 +123,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\login\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\menus\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\order_purchase\read_order_purchase.resx">
+      <DependentUpon>read_order_purchase.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
