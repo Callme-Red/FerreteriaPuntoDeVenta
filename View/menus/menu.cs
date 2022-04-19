@@ -77,7 +77,7 @@ namespace FerreteríaPuntoVenta
      
         private void button_purchase_Click(object sender, EventArgs e)
         {
-
+            show_sub_menu(panel_sub_menu_management_purchase);
         }
 
         private void button_inventario_Click(object sender, EventArgs e)
@@ -111,6 +111,7 @@ namespace FerreteríaPuntoVenta
 
         private void button_management_supplier_Click(object sender, EventArgs e)
         {
+            button_management_supplier.BackColor = Color.FromArgb(37, 36, 81);
             show_sub_menu(panel_sub_menu_supplier);
         }
 
@@ -119,15 +120,18 @@ namespace FerreteríaPuntoVenta
 
         }
         private Form active_form = null;
-        private void open_panel_form(Form panel_form)
+        private void open_panel_form(Form childForm)
         {
-            if (active_form != null)
-                active_form.Close();
-            active_form = panel_form;
-            panel_form.TopLevel = false;
-            panel_form.FormBorderStyle = FormBorderStyle.None;
-            panel_form.Dock = DockStyle.Fill;
-          
+
+            if (active_form != null) active_form.Close();
+            active_form = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel_form.Controls.Add(childForm);
+            panel_form.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         private void botton_inicio_Click(object sender, EventArgs e)
@@ -198,6 +202,30 @@ namespace FerreteríaPuntoVenta
         {
             MasterController mc = new MasterController();
             mc.listPais();
+        }
+
+        private void button_request_purchase_Click(object sender, EventArgs e)
+        {
+            show_sub_menu(panel_sub_menu_management_purchase);
+        }
+
+        private void button_order_purchase_Click(object sender, EventArgs e)
+        {
+            open_panel_form(new FerreteríaPuntoVenta.View.order_purchase.read_order_purchase());
+            show_sub_menu(panel_sub_menu_management_purchase);
+        }
+
+        private void button_contact_supplier_Click(object sender, EventArgs e)
+        {
+            show_sub_menu(panel_sub_menu_supplier);
+            show_sub_menu(panel_sub_menu_management_purchase);
+        }
+
+        private void button_supplier_Click(object sender, EventArgs e)
+        {
+            show_sub_menu(panel_sub_menu_supplier);
+            
+            show_sub_menu(panel_sub_menu_management_purchase);
         }
     }
 }

@@ -48,18 +48,18 @@ namespace FerreteríaPuntoVenta
             this.botton_inicio = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button_minim = new System.Windows.Forms.PictureBox();
-            this.button_cerrar = new System.Windows.Forms.PictureBox();
             this.panel_form = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.button_minim = new System.Windows.Forms.PictureBox();
+            this.button_cerrar = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panel_sub_menu_management_purchase.SuspendLayout();
             this.panel_sub_menu_supplier.SuspendLayout();
             this.panel_sub_menu_inventory.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel_form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.button_minim)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_cerrar)).BeginInit();
-            this.panel_form.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -125,6 +125,7 @@ namespace FerreteríaPuntoVenta
             this.button_order_purchase.Text = "Orden de compra";
             this.button_order_purchase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_order_purchase.UseVisualStyleBackColor = true;
+            this.button_order_purchase.Click += new System.EventHandler(this.button_order_purchase_Click);
             // 
             // button_request_purchase
             // 
@@ -140,6 +141,7 @@ namespace FerreteríaPuntoVenta
             this.button_request_purchase.Text = "Pedido de compra";
             this.button_request_purchase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_request_purchase.UseVisualStyleBackColor = true;
+            this.button_request_purchase.Click += new System.EventHandler(this.button_request_purchase_Click);
             // 
             // panel_sub_menu_supplier
             // 
@@ -167,6 +169,7 @@ namespace FerreteríaPuntoVenta
             this.button_supplier.Text = "Proveedor";
             this.button_supplier.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_supplier.UseVisualStyleBackColor = true;
+            this.button_supplier.Click += new System.EventHandler(this.button_supplier_Click);
             // 
             // button_contact_supplier
             // 
@@ -182,6 +185,7 @@ namespace FerreteríaPuntoVenta
             this.button_contact_supplier.Text = "Contacto de proveedor";
             this.button_contact_supplier.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_contact_supplier.UseVisualStyleBackColor = true;
+            this.button_contact_supplier.Click += new System.EventHandler(this.button_contact_supplier_Click);
             // 
             // button_management_supplier
             // 
@@ -321,49 +325,25 @@ namespace FerreteríaPuntoVenta
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.button_minim);
             this.panel1.Controls.Add(this.button_cerrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(250, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(700, 75);
+            this.panel1.Size = new System.Drawing.Size(750, 75);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            // 
-            // button_minim
-            // 
-            this.button_minim.Image = ((System.Drawing.Image)(resources.GetObject("button_minim.Image")));
-            this.button_minim.Location = new System.Drawing.Point(640, 0);
-            this.button_minim.Name = "button_minim";
-            this.button_minim.Size = new System.Drawing.Size(30, 25);
-            this.button_minim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.button_minim.TabIndex = 4;
-            this.button_minim.TabStop = false;
-            this.button_minim.Click += new System.EventHandler(this.button_minim_Click);
-            // 
-            // button_cerrar
-            // 
-            this.button_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("button_cerrar.Image")));
-            this.button_cerrar.Location = new System.Drawing.Point(670, 0);
-            this.button_cerrar.Name = "button_cerrar";
-            this.button_cerrar.Size = new System.Drawing.Size(30, 25);
-            this.button_cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.button_cerrar.TabIndex = 3;
-            this.button_cerrar.TabStop = false;
-            this.button_cerrar.Click += new System.EventHandler(this.button_cerrar_Click);
-            this.button_cerrar.MouseEnter += new System.EventHandler(this.button_cerrar_MouseEnter);
-            this.button_cerrar.MouseLeave += new System.EventHandler(this.button_cerrar_MouseLeave);
             // 
             // panel_form
             // 
             this.panel_form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(45)))));
             this.panel_form.Controls.Add(this.button1);
+            this.panel_form.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel_form.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_form.Location = new System.Drawing.Point(250, 75);
             this.panel_form.Name = "panel_form";
-            this.panel_form.Size = new System.Drawing.Size(700, 645);
+            this.panel_form.Size = new System.Drawing.Size(750, 645);
             this.panel_form.TabIndex = 2;
             this.panel_form.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_form_Paint);
             this.panel_form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_form_MouseDown);
@@ -378,10 +358,34 @@ namespace FerreteríaPuntoVenta
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // button_minim
+            // 
+            this.button_minim.Image = ((System.Drawing.Image)(resources.GetObject("button_minim.Image")));
+            this.button_minim.Location = new System.Drawing.Point(683, -1);
+            this.button_minim.Name = "button_minim";
+            this.button_minim.Size = new System.Drawing.Size(30, 25);
+            this.button_minim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.button_minim.TabIndex = 4;
+            this.button_minim.TabStop = false;
+            this.button_minim.Click += new System.EventHandler(this.button_minim_Click);
+            // 
+            // button_cerrar
+            // 
+            this.button_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("button_cerrar.Image")));
+            this.button_cerrar.Location = new System.Drawing.Point(719, -1);
+            this.button_cerrar.Name = "button_cerrar";
+            this.button_cerrar.Size = new System.Drawing.Size(30, 25);
+            this.button_cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.button_cerrar.TabIndex = 3;
+            this.button_cerrar.TabStop = false;
+            this.button_cerrar.Click += new System.EventHandler(this.button_cerrar_Click);
+            this.button_cerrar.MouseEnter += new System.EventHandler(this.button_cerrar_MouseEnter);
+            this.button_cerrar.MouseLeave += new System.EventHandler(this.button_cerrar_MouseLeave);
+            // 
             // Form1
             // 
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(950, 720);
+            this.ClientSize = new System.Drawing.Size(1000, 720);
             this.Controls.Add(this.panel_form);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);
@@ -389,15 +393,16 @@ namespace FerreteríaPuntoVenta
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(950, 720);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);
             this.panel_sub_menu_management_purchase.ResumeLayout(false);
             this.panel_sub_menu_supplier.ResumeLayout(false);
             this.panel_sub_menu_inventory.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel_form.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.button_minim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_cerrar)).EndInit();
-            this.panel_form.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

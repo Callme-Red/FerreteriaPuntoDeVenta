@@ -26,8 +26,8 @@ namespace FerreteríaPuntoVenta.View.login
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
-
-        
+       
+      
 
         public void logeo()
         {
@@ -39,13 +39,20 @@ namespace FerreteríaPuntoVenta.View.login
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
+                    MasterConnection.OpenConnection();
                     using (SqlCommand cmd = new SqlCommand("select usuario_nombre,usuario_clave,usuario_token,usuario_estado_id from [dbo].[cat_usuario] where usuario_nombre='"+textUser.Text+ "'  and usuario_clave='" +textClave.Text+ "'  and usuario_token = 1 and usuario_estado_id=2", conexion))
                     {
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())
                         {
+
                             
                             MessageBox.Show("Login existo bienvenido");
+                            Form1 ventana = new Form1();
+                            ventana.Show();
+                            this.Hide();
+
+
 
                         } else
                         {
@@ -135,9 +142,14 @@ namespace FerreteríaPuntoVenta.View.login
             
                 
                 logeo();
-            Application.Run(new menus);
+            
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
+    }
     }
 
