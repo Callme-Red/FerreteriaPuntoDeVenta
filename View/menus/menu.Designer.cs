@@ -48,16 +48,18 @@ namespace FerreteríaPuntoVenta
             this.botton_inicio = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel_form = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblstatus1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.button_minim = new System.Windows.Forms.PictureBox();
             this.button_cerrar = new System.Windows.Forms.PictureBox();
+            this.panel_form = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panel_sub_menu_management_purchase.SuspendLayout();
             this.panel_sub_menu_supplier.SuspendLayout();
             this.panel_sub_menu_inventory.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel_form.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.button_minim)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_cerrar)).BeginInit();
             this.SuspendLayout();
@@ -325,6 +327,7 @@ namespace FerreteríaPuntoVenta
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.panel1.Controls.Add(this.statusStrip1);
             this.panel1.Controls.Add(this.button_minim);
             this.panel1.Controls.Add(this.button_cerrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -335,28 +338,37 @@ namespace FerreteríaPuntoVenta
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
-            // panel_form
+            // statusStrip1
             // 
-            this.panel_form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(45)))));
-            this.panel_form.Controls.Add(this.button1);
-            this.panel_form.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel_form.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_form.Location = new System.Drawing.Point(250, 75);
-            this.panel_form.Name = "panel_form";
-            this.panel_form.Size = new System.Drawing.Size(750, 645);
-            this.panel_form.TabIndex = 2;
-            this.panel_form.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_form_Paint);
-            this.panel_form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_form_MouseDown);
+            this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel2,
+            this.lblstatus1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 53);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.statusStrip1.Size = new System.Drawing.Size(750, 22);
+            this.statusStrip1.TabIndex = 12;
+            this.statusStrip1.Text = "statusStrip1";
             // 
-            // button1
+            // toolStripStatusLabel2
             // 
-            this.button1.Location = new System.Drawing.Point(204, 47);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Listar ";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.toolStripStatusLabel2.BackColor = System.Drawing.SystemColors.Control;
+            this.toolStripStatusLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.toolStripStatusLabel2.ForeColor = System.Drawing.Color.White;
+            this.toolStripStatusLabel2.Margin = new System.Windows.Forms.Padding(6, 3, 0, 2);
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(101, 17);
+            this.toolStripStatusLabel2.Text = "Nombre Usuario:";
+            // 
+            // lblstatus1
+            // 
+            this.lblstatus1.BackColor = System.Drawing.SystemColors.Control;
+            this.lblstatus1.ForeColor = System.Drawing.Color.White;
+            this.lblstatus1.Name = "lblstatus1";
+            this.lblstatus1.Size = new System.Drawing.Size(118, 17);
+            this.lblstatus1.Text = "toolStripStatusLabel1";
+            this.lblstatus1.Click += new System.EventHandler(this.lblstatus1_Click);
             // 
             // button_minim
             // 
@@ -382,6 +394,18 @@ namespace FerreteríaPuntoVenta
             this.button_cerrar.MouseEnter += new System.EventHandler(this.button_cerrar_MouseEnter);
             this.button_cerrar.MouseLeave += new System.EventHandler(this.button_cerrar_MouseLeave);
             // 
+            // panel_form
+            // 
+            this.panel_form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(45)))));
+            this.panel_form.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel_form.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_form.Location = new System.Drawing.Point(250, 75);
+            this.panel_form.Name = "panel_form";
+            this.panel_form.Size = new System.Drawing.Size(750, 645);
+            this.panel_form.TabIndex = 2;
+            this.panel_form.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_form_Paint);
+            this.panel_form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_form_MouseDown);
+            // 
             // Form1
             // 
             this.AutoScroll = true;
@@ -400,7 +424,9 @@ namespace FerreteríaPuntoVenta
             this.panel_sub_menu_supplier.ResumeLayout(false);
             this.panel_sub_menu_inventory.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel_form.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.button_minim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_cerrar)).EndInit();
             this.ResumeLayout(false);
@@ -430,7 +456,9 @@ namespace FerreteríaPuntoVenta
         private System.Windows.Forms.Panel panel_form;
         private System.Windows.Forms.PictureBox button_cerrar;
         private System.Windows.Forms.PictureBox button_minim;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel lblstatus1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
     }
 }
 

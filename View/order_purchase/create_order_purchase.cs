@@ -67,6 +67,18 @@ namespace FerreteríaPuntoVenta.View.order_purchase
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+        }
+
+        private void txtfecharegistro_TextChanged(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
 
         }
     }

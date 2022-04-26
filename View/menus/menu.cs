@@ -14,6 +14,8 @@ namespace FerreteríaPuntoVenta
 {
     public partial class Form1 : Form
     {
+
+        public string NombreUsuario { get; set; }
         public Form1()
         {
             InitializeComponent();
@@ -42,7 +44,7 @@ namespace FerreteríaPuntoVenta
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            lblstatus1.Text = string.Format("{0}", NombreUsuario);
         }
         private void customize_desing()
         {
@@ -226,6 +228,11 @@ namespace FerreteríaPuntoVenta
             show_sub_menu(panel_sub_menu_supplier);
             
             show_sub_menu(panel_sub_menu_management_purchase);
+        }
+
+        private void lblstatus1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
